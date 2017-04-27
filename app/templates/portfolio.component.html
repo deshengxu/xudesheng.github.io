@@ -1,0 +1,29 @@
+  <h2>My Portfolios</h2>
+   <table>
+       <tr>
+           <td>
+                <ul class="heroes">
+                    <li *ngFor="let portfolio of portfolios" [class.selected]="portfolio===selectedPortfolio"
+                        (click)="onSelect(portfolio)">
+                        <span class="badge">{{portfolio.id}}</span>{{portfolio.name}}
+                    </li>
+                    </ul>
+           </td>
+           <td>
+                <div *ngIf="selectedPortfolio">
+                    <h2>
+                        {{selectedPortfolio.name | uppercase}} is my portfolio
+                    </h2>
+                    <p class="PortfolioDetail">
+                        {{selectedPortfolio.description}}
+                    </p>
+                    
+                    </div>
+                <div *ngIf = "!selectedPortfolio">
+                    <h2> click left side to see detail.</h2>
+                </div>
+
+           </td>
+       </tr>
+   </table>
+    

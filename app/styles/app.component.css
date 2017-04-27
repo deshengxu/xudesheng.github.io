@@ -1,0 +1,71 @@
+h1 {
+  font-size: 1.2em;
+  color: #369;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 0;
+}
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
+}
+nav a:visited, a:link {
+  color: #607D8B;
+}
+nav a:hover {
+  color: #039be5;
+  background-color: #CFD8DC;
+}
+nav a.active {
+  color: #039be5;
+}
+
+#parent {
+    overflow: hidden;
+    border: none;
+    border-collapse:collapse;
+    margin: 0 0 0 0;
+}
+.navigation {
+    float: right;
+    width: 320px;
+    height: 50px;
+    background: #888;
+
+}
+.owner {
+    overflow: hidden;
+    height: 50px;
+    background: #888
+}
+
+table {
+    border:none;
+    border-collapse:collapse;
+    border-spacing: 0;
+    width:100%;
+}
+
+td {
+    border: none;
+    outline: none;
+    padding: 0;
+}
+td.bioimage {
+    background-color:#888;
+}
+img {
+    margin: 0 0 0 0;
+}
+
+td.bio {
+    background-color:#888;
+
+}

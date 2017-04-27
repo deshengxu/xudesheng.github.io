@@ -1,0 +1,37 @@
+  <h2>My Interests</h2>
+   <table>
+       <tr>
+           <td>
+                <ul class="heroes">
+                    <li *ngFor="let interest of interests" [class.selected]="interest===selectedInterest"
+                        (click)="onSelect(interest)">
+                        <span class="badge">{{interest.id}}</span>{{interest.name}}
+                    </li>
+                    </ul>
+           </td>
+           <td>
+                <div *ngIf="selectedInterest">
+                    <h2>
+                        {{selectedInterest.name | uppercase}} is my Interest
+                    </h2>
+                    <p class="InterestDetail">
+                        {{selectedInterest.description}}
+                    </p>
+                    <div *ngIf="isChess">
+                        <h3>haha, chess!</h3>
+                    </div>
+                    <div *ngIf="isMath">
+                        <h3>haha, Math!</h3>
+                    </div>
+                    <div *ngIf="isPhysics">
+                        <h3>haha, Physics!</h3>
+                    </div>
+                </div>
+                
+                <div *ngIf="!selectedInterest">
+                    <h2>click left side to see detail.</h2>
+                </div>
+           </td>
+       </tr>
+   </table>
+    
